@@ -1,2 +1,2 @@
-# wordcounterapp
-A word counter site written with python backed
+# Word Counter App
+A word counter site written with python backend
