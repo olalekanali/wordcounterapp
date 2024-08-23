@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter App</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h4>The amount of numbers in the sentence is {{amount}} </h4>
+        </main>
+        <footer>
+            <p>&copy; Ali 2024 Word Counter App</p>
+        </footer>
+    </div>
+</body>

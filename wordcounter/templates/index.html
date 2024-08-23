@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter App</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Word Counter</h1>
+        <main>
+            <h3>Enter the sentence whose number of words you wan to count;</h3>
+            <form method="POST" action="counter">
+                {% csrf_token %}
+                <textarea id="text-input" placeholder="Type or paste your text here..." name="text"></textarea><br>
+                <input type="submit" value="Check Word Count"/>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; Ali 2024 Word Counter App</p>
+        </footer>
+    </div>
+</body>
+</html>
